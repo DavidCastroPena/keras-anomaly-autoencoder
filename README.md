@@ -71,7 +71,7 @@ All are packaged in one Keras `Model(inputs, [recon, err_norm, mask, frame_score
   - **Precision ~0.924** → most alerts are true vehicles.  
   - **Recall ~0.823** → ~82% of anomalous frames are caught; ~18% missed.
 - **2% alert-rate threshold (`0.00319`)**: practical if operator bandwidth is tight; **expect lower recall** (safer on false alarms, riskier on misses).
-- **Cost-minimizing threshold (`0.000742`)**: under your cost model, this is optimal; it typically **increases recall** at the expense of more alerts.
+- **Cost-minimizing threshold (`0.000742`)**: under cost model, this is optimal; it typically **increases recall** at the expense of more alerts.
 
 ---
 
