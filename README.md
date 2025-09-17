@@ -56,7 +56,7 @@ All are packaged in one Keras `Model(inputs, [recon, err_norm, mask, frame_score
 
 ## 📊 Results (UCSD)
 
-**You reported:**
+**Reported:**
 - **ROC AUC:** `0.742`
 - **Average Precision (AUPRC):** `0.9257`
 - **Frames with GT found:** `1530` | **Positives:** `1276` | **Negatives:** `254`
