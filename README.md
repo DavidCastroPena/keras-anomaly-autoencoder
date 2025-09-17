@@ -3,16 +3,16 @@
 > Detect forbidden vehicles in pedestrian-only spaces using a TensorFlow/Keras autoencoder with pixel- and frame-level anomaly signals.
 <img width="971" height="517" alt="Image" src="https://github.com/user-attachments/assets/65dbc1a7-035d-49f9-805a-12560f4967e3" />
 ---
-## 🧭 Problem Context
+## Problem Context
 
 Busy pedestrian walkways (e.g., university paths, plazas) occasionally see **forbidden vehicles** (bicycles, skateboards, carts, cars) enter areas intended for foot traffic only. This raises collision risk and perceived insecurity.
 
 **Objective:** Improve pedestrian safety by **automatically flagging video frames** where a forbidden vehicle appears, so operators can intervene or log incidents.
 
 **Operational constraints:**
-- ⚠️ **Missing a vehicle (false negative)** is costlier than a false alarm.
-- 🔔 Alerts should be **actionable** (not too frequent) and **fast** (frame-level decisions in real time).
-- 🗺️ Pixel-level localization (heatmaps) helps triage by showing *where* the anomaly occurs.
+- **Missing a vehicle (false negative)** is costlier than a false alarm.
+- Alerts should be **actionable** (not too frequent) and **fast** (frame-level decisions in real time).
+- 🗺Pixel-level localization (heatmaps) helps triage by showing *where* the anomaly occurs.
 
 ---
 
@@ -28,7 +28,7 @@ This is implemented as **thresholding** an anomaly score:
 
 ---
 
-## 🗂 Dataset
+## Dataset
 
 We evaluate on the **UCSD Anomaly Detection Dataset (Ped1 & Ped2)**:
 - Outdoor pedestrian walkway footage at UC San Diego.
@@ -53,7 +53,7 @@ All are packaged in one Keras `Model(inputs, [recon, err_norm, mask, frame_score
 
 ---
 
-## 📊 Results (UCSD)
+## Results (UCSD)
 
 **Reported:**
 - **ROC AUC:** `0.742`
@@ -75,7 +75,7 @@ All are packaged in one Keras `Model(inputs, [recon, err_norm, mask, frame_score
 
 ---
 
-## 🧠 Decision in Light of the Metrics
+## Decision in Light of the Metrics
 
 **Safety-first policy (recommended for pedestrian areas):**
 - Operate near the **cost-minimizing** or **slightly lower** threshold than Best-J (e.g., around `0.0007–0.0015`).  
@@ -90,7 +90,7 @@ At the provided best-threshold summary, **TP=1276** and **FN=223** ⇒ the syste
 
 ---
 
-## 🔧 How to Improve
+## How to Improve
 
 - **Modeling**
   - Stronger encoder/decode
