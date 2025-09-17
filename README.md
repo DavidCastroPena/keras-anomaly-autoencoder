@@ -1,9 +1,8 @@
 # Autoencoder Anomaly Detection Wrapper
 
 > Detect forbidden vehicles in pedestrian-only spaces using a TensorFlow/Keras autoencoder with pixel- and frame-level anomaly signals.
-
+<img width="971" height="517" alt="Image" src="https://github.com/user-attachments/assets/65dbc1a7-035d-49f9-805a-12560f4967e3" />
 ---
-
 ## 🧭 Problem Context
 
 Busy pedestrian walkways (e.g., university paths, plazas) occasionally see **forbidden vehicles** (bicycles, skateboards, carts, cars) enter areas intended for foot traffic only. This raises collision risk and perceived insecurity.
