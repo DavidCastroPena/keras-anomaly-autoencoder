@@ -1,4 +1,4 @@
-# Autoencoder Anomaly Detection Wrapper
+# Autoencoder Anomaly Detection With Convolutional Neural Netwokrs
 
 > Detect forbidden vehicles in pedestrian-only spaces using a TensorFlow/Keras autoencoder with pixel- and frame-level anomaly signals.
 <img width="971" height="517" alt="Image" src="https://github.com/user-attachments/assets/65dbc1a7-035d-49f9-805a-12560f4967e3" />
